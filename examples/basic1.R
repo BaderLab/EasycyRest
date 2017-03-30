@@ -34,7 +34,7 @@ network.suid <- createNetwork(mynodes,myedges,"myNetwork","myColl")
 
 # spring-embedded layout on edge 'weight' column
 layout.url <- sprintf("%s/apply/layouts/kamada-kawai/%s?column=weight",
-										base.url,network.suid, sep="/")
+	base.url,network.suid, sep="/")
 print(layout.url)
 response <- GET(url=layout.url) 
 rawToChar(response$content)
@@ -43,13 +43,11 @@ rawToChar(response$content)
 nodeFills <- map_NodeFillDiscrete("GROUP",c("YES","NO"),
 							c("#FF9900","#66AAAA"))
 defaults <- list("NODE_SHAPE"="diamond",
-								"NODE_SIZE"=12,
-								"EDGE_TRANSPARENCY"=120)
-sty <- createStyle("myStyle", defaults=defaults,
-									 mappings=list(nodeFills))
+		"NODE_SIZE"=12,
+		"EDGE_TRANSPARENCY"=120)
+sty <- createStyle("myStyle", defaults=defaults,mappings=list(nodeFills))
 
 # now apply to network
-apply.style.url <- sprintf("%s/apply/styles/%s/%i",base.url,
-													 "myStyle",network.suid)
+apply.style.url <- sprintf("%s/apply/styles/%s/%i",base.url, "myStyle",network.suid)
 response <- GET(apply.style.url)
 
