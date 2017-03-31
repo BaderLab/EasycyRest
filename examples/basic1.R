@@ -30,7 +30,8 @@ collName <- "myCollection"
 # ----------------------------------------------------------------
 
 # create network
-network.suid <- createNetwork(mynodes,myedges,"myNetwork","myColl")
+network.suid <- createNetwork(mynodes,myedges,"myNetwork","myColl",
+	node_IDcolumn="Alias")
 
 # spring-embedded layout on edge 'weight' column
 layout.url <- sprintf("%s/apply/layouts/kamada-kawai/%s?column=weight",
