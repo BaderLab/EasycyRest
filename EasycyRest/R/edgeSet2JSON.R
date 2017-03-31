@@ -6,15 +6,15 @@
 #' Columns contain edge attributes
 #' @export
 edgeSet2JSON <- function(interactions, interA = 'AliasA', 
-			interB = 'AliasB', inter_type='method'){
+	interB = 'AliasB', inter_type='method',...){
   json_edges <- c()
   computed_name <- paste(interactions[,interA], 
-												 interactions[,interB],sep="_")
+	 interactions[,interB],sep="_")
 
   for(i in 1:dim(interactions)[1]){
     rest <- c()
     for(j in 1:dim(interactions)[2]){
-      rest <-  c(rest,assign(colnames(interactions)[j] , interactions[i,j]))    
+      rest <-  c(rest,assign(colnames(interactions)[j] , interactions[i,j])) 
     }
     
     rest <- c(name = computed_name[i],shared_name=computed_name[i],
