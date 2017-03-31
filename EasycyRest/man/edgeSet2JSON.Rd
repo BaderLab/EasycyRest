@@ -5,7 +5,7 @@
 \title{Convert edges to JSON format needed for CyRest network creation}
 \usage{
 edgeSet2JSON(interactions, interA = "AliasA", interB = "AliasB",
-  inter_type = "method")
+  inter_type = "method", ...)
 }
 \arguments{
 \item{interactions}{(data.frame) Rows contain pairwise interactions.

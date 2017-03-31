@@ -4,13 +4,14 @@
 \alias{nodeSet2JSON}
 \title{Creates a table of nodes to CyREST JSON}
 \usage{
-nodeSet2JSON(node_set, id_column = "Alias")
+nodeSet2JSON(node_set, nodeID_column = "Alias", ...)
 }
 \arguments{
 \item{node_set}{(data.frame) each row is a node and columns contain node
 attributes}
 
-\item{id_column}{(char) column of table to set for id,name and shared_name}
+\item{nodeID_column}{(char) column of table to set for id,name and 
+shared_name}
 }
 \description{
 Creates a table of nodes to CyREST JSON

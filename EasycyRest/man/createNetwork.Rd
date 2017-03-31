@@ -5,7 +5,7 @@
 \title{create a network}
 \usage{
 createNetwork(nodes, edges, netName = "network", collName = "collection",
-  portNum = 1234)
+  portNum = 1234, ...)
 }
 \arguments{
 \item{nodes}{(data.frame) see nodeSet2JSON() for details}
@@ -17,6 +17,8 @@ createNetwork(nodes, edges, netName = "network", collName = "collection",
 \item{collName}{(char) network collection name}
 
 \item{portNum}{(int) port number for cytoscape}
+
+\item{...}{params for nodeSet2JSON() and edgeSet2JSON()}
 }
 \value{
 (int) network ID
