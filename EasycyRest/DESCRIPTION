@@ -1,6 +1,6 @@
 Package: EasycyRest
 Title: Simple wrapper functions to use CyREST in R
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: c(person("Shraddha", "Pai", email = "shraddha.pai@utoronto.ca", role = c("aut", "cre")), 
 	person("Ruth","Isserlin",role="aut"))
 Description: Scripts to automate network, creation, style application using

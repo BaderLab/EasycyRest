@@ -3,6 +3,7 @@
 export(createNetwork)
 export(createStyle)
 export(edgeSet2JSON)
+export(makeEMapfromGMT)
 export(map_NodeFillDiscrete)
 export(map_styleDefaults)
 export(nodeSet2JSON)
