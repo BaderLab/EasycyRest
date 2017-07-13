@@ -5,12 +5,13 @@
 \title{Format the Enrichment map - move all red (NES +ve nodes) to the right and
 all blue (NES -ve nodes) to the left}
 \usage{
-formatEnrichmentmap(base.url, network.suid)
+formatEnrichmentmap(network = "current",
+  base.url = "http://localhost:1234/v1")
 }
 \arguments{
 \item{base.url}{cyrest base url for communicating with cytoscape}
 
-\item{network.suid}{suid of the network that you want to get the view for}
+\item{suid}{of the network that you want to get the view for}
 }
 \value{
 server response

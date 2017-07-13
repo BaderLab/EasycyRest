@@ -27,4 +27,3 @@ NETWORK_BACKGROUND_PAINT
 \examples{
 map_styleDefaults(list(NODE_FILL_COLOR="#FF0000",NODE_SIZE=12))
 }
-

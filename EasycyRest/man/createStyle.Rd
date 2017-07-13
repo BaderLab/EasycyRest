@@ -26,4 +26,3 @@ create a style from components
 \details{
 requires attribute mappings to be previously created
 }
-

@@ -26,4 +26,3 @@ createNetwork(nodes, edges, netName = "network", collName = "collection",
 \description{
 create a network
 }
-

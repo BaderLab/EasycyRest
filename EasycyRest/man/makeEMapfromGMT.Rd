@@ -22,4 +22,3 @@ makeEMapfromGMT(gmtFile, simCutoff = 0.05, coefType = "JACCARD",
 \description{
 make enrichment map from GMT
 }
-

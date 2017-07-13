@@ -19,4 +19,3 @@ map_NodeFillDiscrete(attrName, attrVals, cols)
 \description{
 creates node fill JSON to map node attribute to
 }
-
